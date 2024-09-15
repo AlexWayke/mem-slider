@@ -9,44 +9,66 @@
 <body>
   <div class="wrapper">
     <div class="slider">
-      <div class="slider__wrapper">
-        <div class="slider__template">
-          <div class="slider__slide">
-            <div class="slider__slide-img">
-              <img src="./src/i (2).webp" alt="meme">
+      <div class="slider__top">
+        <div class="slider__wrapper">
+          <div class="slider__template">
+            <div class="slider__slide">
+              <div class="slider__slide-img">
+                <img src="./src/i (2).webp" alt="meme">
+              </div>
             </div>
-          </div>
-          <div class="slider__slide">
-            <div class="slider__slide-img">
-              <img src="./src/i (2).webp" alt="meme">
+            <div class="slider__slide">
+              <div class="slider__slide-img">
+                <img src="./src/i (2).webp" alt="meme">
+              </div>
             </div>
-          </div>
-          <div class="slider__slide">
-            <div class="slider__slide-img">
-              <img src="./src/i (2).webp" alt="meme">
+            <div class="slider__slide">
+              <div class="slider__slide-img">
+                <img src="./src/i (2).webp" alt="meme">
+              </div>
             </div>
-          </div>
-          <div class="slider__slide">
-            <div class="slider__slide-img">
-              <img src="./src/i (2).webp" alt="meme">
+            <div class="slider__slide">
+              <div class="slider__slide-img">
+                <img src="./src/i (2).webp" alt="meme">
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <ul class="slider__tabs">
-        <li class="slider__tab">
-          <button class="slider__tab-btn active" onclick="slider.slideTo(this, 0);" data-order="0"><span></span></button>
-        </li>
-        <li class="slider__tab">
-          <button class="slider__tab-btn" onclick="slider.slideTo(this, 1);" data-order="1"><span></span></button>
-        </li>
-        <li class="slider__tab">
-          <button class="slider__tab-btn" onclick="slider.slideTo(this, 2);" data-order="2"><span></span></button>
-        </li>
-        <li class="slider__tab">
-          <button class="slider__tab-btn" onclick="slider.slideTo(this, 3);" data-order="3"><span></span></button>
-        </li>
-      </ul>
+      <div class="slider__bottom">
+        <div class="slider__titles">
+          <div class="slider__wrapper">
+            <div class="slider__template">
+              <div class="slider__slide">
+                <p class="slider__slide-description">Some title</p>
+              </div>
+              <div class="slider__slide">
+                <p class="slider__slide-description">Some title</p>
+              </div>
+              <div class="slider__slide">
+                <p class="slider__slide-description">Some title</p>
+              </div>
+              <div class="slider__slide">
+                <p class="slider__slide-description">Some title</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="slider__tabs">
+          <li class="slider__tab">
+            <button class="slider__tab-btn active" data-order="0"><span></span></button>
+          </li>
+          <li class="slider__tab">
+            <button class="slider__tab-btn" data-order="1"><span></span></button>
+          </li>
+          <li class="slider__tab">
+            <button class="slider__tab-btn" data-order="2"><span></span></button>
+          </li>
+          <li class="slider__tab">
+            <button class="slider__tab-btn" data-order="3"><span></span></button>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <script src="./script.js"></script>

@@ -4,7 +4,7 @@ class Slider {
     this.wrapper = this.slider.querySelector('.slider__wrapper'),
     this.template = this.slider.querySelector('.slider__template'),
     this.slides = this.slider.querySelectorAll('.slider__slide'),
-    this.tabs = this.slider.querySelector('.slider__tabs')
+    this.tabs = this.slider.closest('.slider').querySelector('.slider__tabs')
   }
 
   setWidth(){
@@ -27,16 +27,26 @@ class Slider {
     btn.classList.add('active');
     this.template.style.transform = `translateX(${-currentWidth * id}px)`
   }
-
-  showSlider(){
-    this.setWidth();
-  }
 }
 
-const slider = new Slider('.slider');
+const slider = new Slider('.slider__top');
+const sliderTitels = new Slider('.slider__titles');
+const tabs = document.querySelectorAll('.slider__tab-btn');
 
-slider.showSlider();
+slider.setWidth();
+sliderTitels.setWidth();
+slider.setWidth();
+sliderTitels.setWidth();
 
 window.addEventListener('resize', function() {
   slider.setWidth();
+  sliderTitels.setWidth();
 }, true);
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    let order = tab.dataset.order;
+    slider.slideTo(tab, order);
+    sliderTitels.slideTo(tab, order);
+  })
+});
