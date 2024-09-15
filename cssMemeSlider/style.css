@@ -49,6 +49,7 @@ html, body, .wrapper{
   align-items: center;
 }
 .slider__titles{
+  width: 100%;
   overflow: hidden;
 }
 .slider__slide-description {
@@ -93,4 +94,9 @@ html, body, .wrapper{
 .slider__tab-btn:hover span {
   background: #ffffff80;
   border: 2px solid #ffffff00;
+}
+@media (max-width:600px) {
+  .slider__bottom{
+    flex-direction: column;
+  }
 }
