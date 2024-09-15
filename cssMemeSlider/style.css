@@ -12,7 +12,7 @@ html, body, .wrapper{
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: #00000010;
+  background: #25282A;
 }
 .slider {
   width: 100%;
@@ -50,16 +50,35 @@ html, body, .wrapper{
 .slider__tabs{
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 .slider__tab {
-  width: 40px;
-  height: 40px;
+  list-style-type: none;
 }
 .slider__tab-btn {
-  width: 100%;
-  height: 100%;
-  background: ;
+  list-style-type: none;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  cursor: pointer;
 }
-.slider__tab-btn.active {
+.slider__tab-btn span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #71ABFF;
+  border: 2px solid #71ABFF;
+  border-radius: 50%;
+  transition: all ease .3s;
+
+}
+.slider__tab-btn.active span {
+  background: #71ABFF00;
+}
+.slider__tab-btn:hover span {
+  background: #ffffff80;
+  border: 2px solid #ffffff00;
 }
