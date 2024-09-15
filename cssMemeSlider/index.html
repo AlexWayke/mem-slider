@@ -35,16 +35,16 @@
       </div>
       <ul class="slider__tabs">
         <li class="slider__tab">
-          <button class="slider__tab-btn active" data-order="1"><span></span></button>
+          <button class="slider__tab-btn active" onclick="slider.slideTo(this, 0);" data-order="0"><span></span></button>
         </li>
         <li class="slider__tab">
-          <button class="slider__tab-btn" data-order="2"><span></span></button>
+          <button class="slider__tab-btn" onclick="slider.slideTo(this, 1);" data-order="1"><span></span></button>
         </li>
         <li class="slider__tab">
-          <button class="slider__tab-btn" data-order="3"><span></span></button>
+          <button class="slider__tab-btn" onclick="slider.slideTo(this, 2);" data-order="2"><span></span></button>
         </li>
         <li class="slider__tab">
-          <button class="slider__tab-btn" data-order="4"><span></span></button>
+          <button class="slider__tab-btn" onclick="slider.slideTo(this, 3);" data-order="3"><span></span></button>
         </li>
       </ul>
     </div>
