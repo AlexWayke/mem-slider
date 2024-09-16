@@ -9,68 +9,51 @@
 <body>
   <div class="wrapper">
     <div class="slider">
-      <div class="slider__top">
-        <div class="slider__wrapper">
-          <div class="slider__template">
-            <div class="slider__slide">
-              <div class="slider__slide-img">
-                <img src="./src/meme-one.jpg" alt="meme">
-              </div>
-            </div>
-            <div class="slider__slide">
-              <div class="slider__slide-img">
-                <img src="./src/meme-two.jpg" alt="meme">
-              </div>
-            </div>
-            <div class="slider__slide">
-              <div class="slider__slide-img">
-                <img src="./src/meme-three.jpg" alt="meme">
-              </div>
-            </div>
-            <div class="slider__slide">
-              <div class="slider__slide-img">
-                <img src="./src/meme-four.jpg" alt="meme">
-              </div>
-            </div>
+      <input class="slider__tab tab-1" type="radio" id="first" name="drone" checked>
+      <label class="slider__tab-label slider__tab-label--1" for="first"><span></span></label>
+      <input class="slider__tab tab-2" type="radio" id="second" name="drone"  />
+      <label class="slider__tab-label slider__tab-label--2" for="second"><span></span></label>
+      <input class="slider__tab tab-3" type="radio" id="third" name="drone"  />
+      <label class="slider__tab-label slider__tab-label--3" for="third"><span></span></label>
+      <input class="slider__tab tab-4" type="radio" id="four" name="drone"  />
+      <label class="slider__tab-label slider__tab-label--4" for="four"><span></span></label>
+      <div class="slider__wrapper">
+        <div class="slider__slide">
+          <div class="slider__slide-img">
+            <img src="./src/meme-one.jpg" alt="meme">
+          </div>
+        </div>
+        <div class="slider__slide">
+          <div class="slider__slide-img">
+            <img src="./src/meme-two.jpg" alt="meme">
+          </div>
+        </div>
+        <div class="slider__slide">
+          <div class="slider__slide-img">
+            <img src="./src/meme-three.jpg" alt="meme">
+          </div>
+        </div>
+        <div class="slider__slide">
+          <div class="slider__slide-img">
+            <img src="./src/meme-four.jpg" alt="meme">
           </div>
         </div>
       </div>
-      <div class="slider__bottom">
-        <div class="slider__titles">
-          <div class="slider__wrapper">
-            <div class="slider__template">
-              <div class="slider__slide">
-                <p class="slider__slide-description">Кто мы?</p>
-              </div>
-              <div class="slider__slide">
-                <p class="slider__slide-description">Откуда?</p>
-              </div>
-              <div class="slider__slide">
-                <p class="slider__slide-description">Куда мы идем?</p>
-              </div>
-              <div class="slider__slide">
-                <p class="slider__slide-description">текст...</p>
-              </div>
-            </div>
-          </div>
+      <div class="slider__titles">
+        <div class="slider__slide">
+          <p class="slider__slide-description">Кто мы?</p>
         </div>
-        <ul class="slider__tabs">
-          <li class="slider__tab">
-            <button class="slider__tab-btn active" data-order="0"><span></span></button>
-          </li>
-          <li class="slider__tab">
-            <button class="slider__tab-btn" data-order="1"><span></span></button>
-          </li>
-          <li class="slider__tab">
-            <button class="slider__tab-btn" data-order="2"><span></span></button>
-          </li>
-          <li class="slider__tab">
-            <button class="slider__tab-btn" data-order="3"><span></span></button>
-          </li>
-        </ul>
+        <div class="slider__slide">
+          <p class="slider__slide-description">Откуда?</p>
+        </div>
+        <div class="slider__slide">
+          <p class="slider__slide-description">Куда мы идем?</p>
+        </div>
+        <div class="slider__slide">
+          <p class="slider__slide-description">текст...</p>
+        </div>
       </div>
     </div>
   </div>
-  <script src="./script.js"></script>
 </body>
 </html>
